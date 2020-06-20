@@ -63,7 +63,7 @@ let parse ?regression_name str =
     | Some str -> str, default_bootstrap_trials, true
   in
   match String.lsplit2 str ~on:':' with
-  | None -> failwith "Regression string should have format <responder:predictors>."
+  | None -> failwith "Regression string should have format <responder:predictors>~"
   | Some (resp, preds) ->
     let preds = String.split preds ~on:',' in
     let responder = Variable.of_short_string resp in

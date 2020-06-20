@@ -57,7 +57,7 @@ let wrapper_param =
         ]
     and save_sample_data =
       flag "-save" no_arg
-        ~doc:" Save benchmark data to <test name>.txt files."
+        ~doc:" Save benchmark data to <test name>~txt files."
     and show_output_as_sexp =
       flag "-sexp" no_arg ~doc:" Output as sexp."
     and minimal_tables =
